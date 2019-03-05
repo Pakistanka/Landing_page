@@ -1,0 +1,68 @@
+.header {
+  background: $white;
+  font-family: 'Futura New Book', $default;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+
+  &__lang {
+    display: flex;
+    justify-content: flex-end;
+
+    &-elem {
+      font-size: 7.2px;
+      color: $black;
+      padding: 0px 5px;
+
+      &:hover {
+        color: $orange-red;
+      }
+      &:active {
+        color: $orange-red;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  &__logo {
+    text-transform: uppercase;
+    order: -1;
+    flex: 1 0 85%;
+  }
+
+  &__section {
+    margin: 20px 0px 30px;
+
+    &:last-of-type {
+
+      &::after {
+        border-right: none;
+      }
+    }
+
+    &::after {
+      border-right: 1px solid $black;
+      content: "";
+      padding: 0px 3px;
+    }
+
+  }
+
+  &__loupe {
+    background-image:url("../images/loupe.svg");
+    width: 11px;
+    height: 11px;
+    background-position: center;
+    background-size: cover;
+    order: 1;
+    position: relative;
+    bottom: 80px;
+    left: calc(100% + -12px);
+  }
+}
