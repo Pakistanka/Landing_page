@@ -17099,7 +17099,7 @@ button:focus {
 .select {
   background-color: #ffffff;
   height: 150px; }
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  @media only screen and (min-width: 769px) {
     .select {
       padding: 0px 80px; } }
   .select__title {
@@ -17108,7 +17108,7 @@ button:focus {
     line-height: 1;
     margin-top: 30px;
     margin-bottom: 30px; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .select__title {
         width: 35%;
         float: left;
@@ -17119,7 +17119,7 @@ button:focus {
   float: left;
   margin-right: 5px;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .selectFilter {
       width: 25%;
       margin-bottom: 0px; } }
@@ -17444,7 +17444,7 @@ button:focus {
 
 .dashboard {
   background-color: #636363; }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .dashboard {
       padding: 0px 80px; } }
   .dashboard__title {
@@ -17454,7 +17454,7 @@ button:focus {
     line-height: 1;
     color: #ffffff;
     font-family: "PTSerif"; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .dashboard__title {
         text-align: left;
         width: 279px; } }
@@ -17463,7 +17463,7 @@ button:focus {
     margin-left: 0.58824rem;
     color: #ffffff;
     line-height: normal; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .dashboard__undertitle {
         margin: 0 auto;
         width: 300px; } }
@@ -17478,7 +17478,7 @@ button:focus {
     color: #ffffff;
     margin-left: 0.58824rem;
     padding: 15px 0px; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .dashboard__text {
         margin: 0 auto;
         width: 300px; } }
@@ -17500,12 +17500,12 @@ button:focus {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .dashboard__wrap {
         width: 262.2px;
         text-align: right;
         margin: 0 auto; } }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .dashboard__wrap2 {
       width: 262.2px;
       text-align: right;
@@ -17524,7 +17524,7 @@ button:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .dashboard__dark-wrapper {
         padding-left: 10px;
         -webkit-box-flex: 1;
@@ -17549,7 +17549,7 @@ button:focus {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  @media only screen and (min-width: 769px) {
     .redDashboard {
       padding: 0px 80px; } }
   .redDashboard__block {
@@ -17566,7 +17566,7 @@ button:focus {
     margin-top: 20px;
     margin: auto 5px;
     text-align: center; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .redDashboard__block {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -17643,7 +17643,7 @@ button:focus {
   background-size: cover;
   height: 309.6px;
   width: 100%; }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .skaterDashboard {
       padding: 0px 80px; } }
   .skaterDashboard__title {
@@ -17665,7 +17665,7 @@ button:focus {
     color: #ff351b;
     padding-bottom: 10px;
     margin-left: 10px; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .skaterDashboard__undertitle {
         width: 270px; } }
   .skaterDashboard__text {
@@ -17677,7 +17677,7 @@ button:focus {
     letter-spacing: normal;
     color: #373737;
     padding-left: 10px; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .skaterDashboard__text {
         width: 270px; } }
 
@@ -17685,6 +17685,9 @@ button:focus {
   color: #ff351b;
   padding-top: calc(20% + 10px);
   padding-left: 10px; }
+  @media only screen and (min-width: 768px) {
+    .counter {
+      padding-top: calc(15% + 10px); } }
 
 #counter {
   color: #ffffff; }
@@ -18362,7 +18365,7 @@ button:focus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: 10px; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .header__wrapper {
         -webkit-box-align: end;
             -ms-flex-align: end;
@@ -18380,7 +18383,7 @@ button:focus {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 20%;
                 flex: 0 0 20%; } }
-    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    @media only screen and (min-width: 769px) {
       .header__logo {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 30%;
@@ -18388,7 +18391,7 @@ button:focus {
   .header__section {
     margin: 20px 0px 30px;
     text-transform: uppercase; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .header__section {
         margin: 20px 0px 10px;
         font-size: 12px; } }
@@ -18410,7 +18413,7 @@ button:focus {
     position: relative;
     bottom: 80px;
     left: calc(100% + -12px); }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .header__loupe {
         left: -10px;
         bottom: 10px; } }
@@ -18546,7 +18549,7 @@ button:focus {
     @media only screen and (max-width: 768px) and (min-width: 320px) {
       .social__wrapper {
         margin-left: calc(60% + 10px); } }
-    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    @media only screen and (min-width: 769px) {
       .social__wrapper {
         margin-left: calc(70% + 10px); } }
 
@@ -18596,7 +18599,7 @@ button:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 10px; }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .rights {
       width: 100%; } }
   .rights__text {
@@ -18666,16 +18669,17 @@ button:focus {
   background-size: cover;
   width: 100%;
   height: 414px; }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .section-one {
-      padding: 0px 80px; } }
+      padding: 0px 80px;
+      background-position: 30% 30%; } }
   .section-one__image {
     height: 300px;
     float: right;
     clear: both;
     position: relative;
     z-index: 5; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .section-one__image {
         margin-top: 40px; } }
   .section-one__wrapper {
@@ -18696,7 +18700,7 @@ button:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .section-one__text {
         width: 376px; } }
   .section-one__line {
@@ -18721,7 +18725,7 @@ button:focus {
   line-height: 1;
   letter-spacing: normal;
   color: #636363; }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .collegues__title {
       padding: 10px 80px; } }
 
@@ -18752,7 +18756,7 @@ button:focus {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-left: 30px; }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .collegues__wrapper-item {
       width: 25%;
       -ms-flex-preferred-size: 25%;
@@ -18806,7 +18810,7 @@ button:focus {
   background-size: cover;
   width: 100%;
   height: 353.4px; }
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .section-two {
       padding: 0px 80px; } }
   .section-two__title {
@@ -18825,7 +18829,7 @@ button:focus {
     letter-spacing: normal;
     color: #ff351b;
     padding: 15px 10px 5px; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .section-two__underline {
         width: 262.2px;
         padding-top: 50px; } }
@@ -18837,7 +18841,7 @@ button:focus {
     letter-spacing: normal;
     color: #ffffff;
     padding: 5px 10px 15px; }
-    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .section-two__text {
         width: 262.2px; } }
 

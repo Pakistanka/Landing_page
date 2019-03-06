@@ -128,7 +128,7 @@
     @media only screen and (max-width: 768px) and (min-width: 320px) {
       margin-left: calc(60% + 10px);
     }
-    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    @media only screen and (min-width: 769px) {
       margin-left: calc(70% + 10px);
     }
   }
@@ -181,7 +181,7 @@
   justify-content: space-between;
   padding: 20px 10px;
 
-  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     width: 100%;
   }
 
