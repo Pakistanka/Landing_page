@@ -2,6 +2,10 @@
 
   background-color: $brownish-grey;
 
+  @media only screen and (max-width: 1024px) and (min-width: 320px){
+    padding: 0px 80px;
+  }
+
   &__title {
     padding: rem(15px) 0px;
     margin-left: rem(10px);
@@ -9,6 +13,11 @@
     line-height: 1;
     color: $white;
     font-family: "PTSerif";
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px){
+      text-align: left;
+      width: 279px;
+    }
   }
 
   &__undertitle {
@@ -16,6 +25,11 @@
     margin-left: rem(10px);
     color: $white;
     line-height: normal;
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px){
+      margin: 0 auto;
+      width: 300px;
+    }
   }
 
   &__text {
@@ -29,6 +43,11 @@
     color: $white;
     margin-left: rem(10px);
     padding: 15px 0px;
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px){
+      margin: 0 auto;
+      width: 300px;
+    }
   }
 
   &__rightLine {
@@ -44,6 +63,22 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px){
+      width: 262.2px;
+      text-align:right;
+      margin: 0 auto;
+    }
+
+  }
+
+  &__wrap2 {
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px){
+      width: 262.2px;
+      text-align:right;
+      margin: 0px;
+    }
   }
 
   &__link {
@@ -57,6 +92,21 @@
 
     &:hover{
       color: $orange-red;
+    }
+  }
+
+  &__dark {
+
+    display: flex;
+
+    &-wrapper {
+      @media only screen and (max-width: 1024px) and (min-width: 320px){
+        padding-left: 10px;
+        flex: 1 0 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }

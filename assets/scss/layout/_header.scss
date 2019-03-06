@@ -8,6 +8,7 @@
   &__lang {
     display: flex;
     justify-content: flex-end;
+    margin-right: 10px;
 
     &-elem {
       font-size: 7.2px;
@@ -28,16 +29,34 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 10px;
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+      align-items: flex-end;
+    }
   }
 
   &__logo {
     text-transform: uppercase;
     order: -1;
     flex: 1 0 85%;
+
+    @media only screen and (max-width: 768px) and (min-width: 320px) {
+      flex: 0 0 20%;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      flex: 0 0 30%;
+    }
   }
 
   &__section {
     margin: 20px 0px 30px;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+      margin: 20px 0px 10px;
+      font-size: 12px;
+    }
+
 
     &:last-of-type {
 
@@ -64,5 +83,11 @@
     position: relative;
     bottom: 80px;
     left: calc(100% + -12px);
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+      left: -10px;
+      bottom: 10px;
+    }
   }
+
 }

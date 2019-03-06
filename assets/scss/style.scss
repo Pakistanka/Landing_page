@@ -13,8 +13,8 @@
 
 // Vendor
 @import "~select2/dist/css/select2";
-@import "~slick-carousel/slick/slick.scss";
-@import "~slick-carousel/slick/slick-theme.scss";
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";
 
 // Fonts
 @import "base/fonts";
@@ -31,6 +31,7 @@
 @import "components/figure";
 @import "components/greyDashboard";
 @import "components/skaterDashboard";
+@import "components/slider";
 
 //layout
 @import "layout/grid";

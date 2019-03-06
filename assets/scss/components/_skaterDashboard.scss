@@ -7,6 +7,10 @@
   height: 309.6px;
   width: 100%;
 
+  @media only screen and (max-width: 1024px) and (min-width: 320px) {
+    padding: 0px 80px;
+  }
+
   &__title {
     font-size: 24px;
     font-weight: normal;
@@ -27,6 +31,10 @@
     color: $orange-red;
     padding-bottom: 10px;
     margin-left: 10px;
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+      width: 270px;
+    }
   }
   &__text {
     font-size: 11px;
@@ -36,6 +44,10 @@
     line-height: 1.45;
     letter-spacing: normal;
     color: $black;
-    padding: 0px 30px rem(50px) 10px;
+    padding-left: 10px;
+
+    @media only screen and (max-width: 1024px) and (min-width: 320px) {
+      width: 270px;
+    }
   }
 }

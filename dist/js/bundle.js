@@ -105,14 +105,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var app = {
   init: function init() {
-    func.jsScrollbar();
-    func.jsSelect();
     func.jsInitialSelect();
+    func.jsSlider();
   }
 };
 var func = {
   jsInitialSelect: function jsInitialSelect() {
-    // SUMOSELECT START
     if ($('.js-select').length > 0) {
       $('.js-select').each(function (idx, select) {
         var $select = $(select);
@@ -128,42 +126,20 @@ var func = {
           });
         }
       });
-    } // SUMOSELECT END
-
-  },
-  jsScrollbar: function jsScrollbar() {
-    var els = document.querySelectorAll('.js-scrollbar');
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = els[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var el = _step.value;
-        smooth_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"].init(el);
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
     }
   },
-  jsSelect: function jsSelect() {
-    $('.js-select').select2({
-      minimumResultsForSearch: -1,
-      containerCssClass: 'raif-select__select',
-      dropdownCssClass: 'raif-select__results',
-      width: '100%',
-      theme: 'raif-select'
+  jsSlider: function jsSlider() {
+    // $('.js-slider').slick({
+    //   slidesToShow: 1,
+    //   slidesToScroll: 1,
+    //   infinite: false,
+    //   dots: false,
+    //   appendArrows: $('.arrows'),
+    //   prevArrow: '<img src="../images/arrow-right.svg" alt="" class="arrow-right">',
+    //   nextArrow: '<img src="../images/arrow-left.svg" alt="" class="arrow-left">'
+    // });
+    $(".js-slider").on('afterChange', function (event, slick, currentSlide) {
+      $("#counter").text(currentSlide + 1);
     });
   }
 };

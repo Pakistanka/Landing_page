@@ -4,16 +4,15 @@ import 'slick-carousel/slick/slick.min.js';
 
 let app = {
     init() {
-        func.jsScrollbar();
-        func.jsSelect();
         func.jsInitialSelect();
+        func.jsSlider();
     }
 
 };
 
 let func = {
   jsInitialSelect() {
-      // SUMOSELECT START
+
       if ($('.js-select').length > 0) {
           $('.js-select').each(function(idx, select){
               let $select = $(select);
@@ -30,26 +29,25 @@ let func = {
               }
           });
       }
-      // SUMOSELECT END
   },
 
-    jsScrollbar() {
-        let els = document.querySelectorAll('.js-scrollbar');
+  jsSlider() {
 
-        for (let el of els) {
-            Scrollbar.init(el);
-        }
+      // $('.js-slider').slick({
+      //   slidesToShow: 1,
+      //   slidesToScroll: 1,
+      //   infinite: false,
+      //   dots: false,
+      //   appendArrows: $('.arrows'),
+      //   prevArrow: '<img src="../images/arrow-right.svg" alt="" class="arrow-right">',
+      //   nextArrow: '<img src="../images/arrow-left.svg" alt="" class="arrow-left">'
+      // });
+      $(".js-slider").on('afterChange', function(event, slick, currentSlide){
+        $("#counter").text(currentSlide + 1);
+      });
     },
-    jsSelect() {
-        $('.js-select').select2({
-            minimumResultsForSearch: -1,
-            containerCssClass: 'raif-select__select',
-            dropdownCssClass: 'raif-select__results',
-            width: '100%',
-            theme: 'raif-select'
-        });
-    },
-};
+}
+
 
 $(function () {
 

@@ -39,7 +39,10 @@
              srcset="dist/images/vert-line@2x.png 2x,
              dist/images/vert-line@3x.png 3x"
              class="section-one__image">
-        <div class="section-one__wrapper">
+        <div class="counter"><span id="counter">1</span>|7</div>
+        <div class="arrows">
+        </div>
+        <div class="section-one__wrapper js-slider">
           <div class="section-one__text">
             <span>Success Steps For Your</span>
             <span>Personal Or Business Life</span>
@@ -51,12 +54,12 @@
         </div>
       </section>
       <section class="select">
-          <div class="select__title mt-30px mb-30px ml-10px">
+          <div class="select__title ml-10px">
             <span>Top 3 Reasons Why</span><br />
             <span>You Need Cookie:</span>
           </div>
           <div class="selectFilter__wrapper">
-            <div class="selectFilter ml-10px mb-30px">
+            <div class="selectFilter ml-10px">
               <select class="js-select styledSelect" name="">
                   <option value="" selected>Jeffery Ramos</option>
                   <option value="">John Smith</option>
@@ -64,7 +67,7 @@
                   <option value="">Michel O'Neil</option>
               </select>
             </div>
-            <div class="selectFilter ml-10px mb-30px">
+            <div class="selectFilter ml-10px">
               <select class="js-select styledSelect" name="">
                   <option value="" selected>Joe Robinson</option>
                   <option value="">Jeffery Ramos</option>
@@ -76,50 +79,58 @@
       </section>
       <section class="dashboard mt-30px mb-30px">
         <div class="dashboard__title">Rosaburgh</div>
-        <div class="dashboard__undertitle">Unmatched Toner Cartridge<br />uality 20 less Than Oem Price</div>
-        <div class="dashboard__text">
-          <span>A Pocket PC is a handheld computer, which features many</span>
-          <span>of the same capabilities as a modern PC. These handy little</span>
-          <span>devices allow individuals to retrieve and store e-mail</span>
-          <span>messages, create a contact file, coordinate appointments.</span>
+        <div class="js-slider">
+          <div class="dashboard__undertitle">Unmatched Toner Cartridge<br />uality 20 less Than Oem Price</div>
+          <div class="dashboard__text">
+            <span>A Pocket PC is a handheld computer, which features many</span>
+            <span>of the same capabilities as a modern PC. These handy little</span>
+            <span>devices allow individuals to retrieve and store e-mail</span>
+            <span>messages, create a contact file, coordinate appointments.</span>
+          </div>
+          <div class="dashboard__wrap">
+            <div class="dashboard__rightLine"></div>
+            <a href="#" class="dashboard__link">Подробнее</a>
+          </div>
         </div>
-        <div class="dashboard__wrap">
-          <div class="dashboard__rightLine"></div>
-          <a href="#" class="dashboard__link">Подробнее</a>
-        </div>
-
+        <div class="arrows"></div>
       </section>
       <section class="collegues">
         <div class="collegues__title">Gerryville</div>
         <div class="collegues__wrapper mt-20px">
           <div class="collegues__person"></div>
 
-          <div class="collegues__wrapper-item">
-            <img src="dist/images/collegues.png" class="collegues__wrapper-image"/>
-            <div class="collegues__wrapper-text">
-              <div class="collegues__wrapper-fio">Delivering Kisses And Miracles</div>
-              <div  class="collegues__wrapper-line"></div>
-              <div class="collegues__wrapper-position">Port Ivy</div>
+          <div class="js-slider collegues__container">
+            <div class="collegues__wrapper-item">
+              <img src="dist/images/collegues.png" class="collegues__wrapper-image"/>
+              <div class="collegues__wrapper-text">
+                <div class="collegues__wrapper-fio">Delivering Kisses And Miracles</div>
+                <div  class="collegues__wrapper-line"></div>
+                <div class="collegues__wrapper-position">Port Ivy</div>
+              </div>
+            </div>
+
+            <div class="collegues__wrapper-item">
+              <img src="dist/images/collegues-two.png" class="collegues__wrapper-image"/>
+              <div class="collegues__wrapper-text">
+                <div class="collegues__wrapper-fio">Delivering Kisses And Miracles</div>
+                <div  class="collegues__wrapper-line"></div>
+                <div class="collegues__wrapper-position">Port Ivy</div>
+              </div>
+            </div>
+
+            <div class="collegues__wrapper-item">
+              <img src="dist/images/collegues-three.png" class="collegues__wrapper-image"/>
+              <div class="collegues__wrapper-text">
+                <div class="collegues__wrapper-fio">Delivering Kisses And Miracles</div>
+                <div  class="collegues__wrapper-line"></div>
+                <div class="collegues__wrapper-position">Port Ivy</div>
+              </div>
             </div>
           </div>
-
-          <!-- <div class="collegues__wrapper-item">
-            <img src="dist/images/collegues-two.png" class="collegues__wrapper-image"/>
-            <div class="collegues__wrapper-text">
-              <div class="collegues__wrapper-fio">Delivering Kisses And Miracles</div>
-              <div  class="collegues__wrapper-line"></div>
-              <div class="collegues__wrapper-position">Port Ivy</div>
-            </div>
+          <div class="arrows">
           </div>
 
-          <div class="collegues__wrapper-item">
-            <img src="dist/images/collegues-three.png" class="collegues__wrapper-image"/>
-            <div class="collegues__wrapper-text">
-              <div class="collegues__wrapper-fio">Delivering Kisses And Miracles</div>
-              <div  class="collegues__wrapper-line"></div>
-              <div class="collegues__wrapper-position">Port Ivy</div>
-            </div>
-          </div> -->
+
         </div>
 
 
@@ -139,49 +150,60 @@
         </div>
       </section>
       <section class="section-two">
-        <div class="section-two__title">
-          <span>Save Money The</span>
-          <span>Crock Pot Way</span>
+        <div class=" js-slider">
+          <div class="section-two__title">
+            <span>Save Money The</span>
+            <span>Crock Pot Way</span>
+          </div>
+          <div class="section-two__underline">Two Questions To Ask About Bird Flu Vaccines</div>
+          <div class="section-two__text">
+            If you are a male over the age of 40
+            and are suffering from weakness, impotence,
+            pain, stiffness, drooping muscles, depression,
+            anxiety, or heat intolerance, you may be experiencing “andropause”.
+          </div>
+          <div class="dashboard__wrap dashboard__wrap2">
+            <div class="dashboard__rightLine"></div>
+            <a href="#" class="dashboard__link">Подробнее</a>
+          </div>
         </div>
-        <div class="section-two__underline">Two Questions To Ask About Bird Flu Vaccines</div>
-        <div class="section-two__text">
-          If you are a male over the age of 40
-          and are suffering from weakness, impotence,
-          pain, stiffness, drooping muscles, depression,
-          anxiety, or heat intolerance, you may be experiencing “andropause”.
-        </div>
-        <div class="dashboard__wrap">
-          <div class="dashboard__rightLine"></div>
-          <a href="#" class="dashboard__link">Подробнее</a>
+        <div class="arrows">
+
         </div>
       </section>
-      <section class="dashboard">
-        <div class="dashboard__title">Perfume Tips Tricks</div>
+      <section class="dashboard__dark">
+        <section class="dashboard dashboard__dark-wrapper">
+          <div class="dashboard__title">Perfume Tips Tricks</div>
 
-        <figure class="figure">
-          <img src="dist/images/view.png" alt="" class="figure__image">
-          <figcaption class="figure__figcaption">
-            Kittyfort
-          </figcaption>
-        </figure>
+          <figure class="figure js-slider">
+            <img src="dist/images/view.png" alt="" class="figure__image">
+            <figcaption class="figure__figcaption">
+              Kittyfort
+            </figcaption>
+          </figure>
+          <div class="arrows">
 
-      </section>
-      <section class="greyDashboard">
-        <div class="greyDashboard__title">Breast Lifts</div>
-        <div class="greyDashboard__undertitle">Cartwrightborough</div>
-        <div class="greyDashboard__text">
-          Summer is often synonymous with beaches, ballparks
-          and barbecues, all offering tempting snacks and treats.
-          To many women who are watching their weight, the back-to-school
-          season is an ideal time to enroll in their own
-          “Making Smarter Food Choices 101″ class and
-          refocus on a balanced diet and healthy lifestyle.
-        </div>
+          </div>
 
+        </section>
+        <section class="greyDashboard">
+          <div class="greyDashboard__title">Breast Lifts</div>
+          <div class="js-slider">
+            <div class="greyDashboard__undertitle">Cartwrightborough</div>
+            <div class="greyDashboard__text">
+              Summer is often synonymous with beaches, ballparks
+              and barbecues, all offering tempting snacks and treats.
+              To many women who are watching their weight, the back-to-school
+              season is an ideal time to enroll in their own
+              “Making Smarter Food Choices 101″ class and
+              refocus on a balanced diet and healthy lifestyle.
+            </div>
+          </div>
+        </section>
       </section>
       <section class="skaterDashboard">
-        <div class="skaterDashboard__title">Breast Lifts</div>
-        <div class="skaterDashboard__undertitle">Cartwrightborough</div>
+        <div class="skaterDashboard__title">Rebeccamouth</div>
+        <div class="skaterDashboard__undertitle">South Justicestad</div>
         <div class="skaterDashboard__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Aenean euismod bibendum laoreet.
@@ -191,13 +213,17 @@
           Nam fermentum, nulla luctus pharetra vulputate,
           felis tellus mollis orci, sed rhoncus sapien nunc eget.
         </div>
+        <div class="dashboard__wrap dashboard__wrap2">
+          <div class="dashboard__rightLine"></div>
+          <a href="#" class="dashboard__link">Подробнее</a>
+        </div>
 
       </section>
     </main>
     <footer class="footer">
       <div class="footer__block">
         <div class="footer__block-part">
-          <span class="footer__block-title">Раздел 1</span>
+          <div class="footer__block-title">Раздел 1</div>
           <ul class="footer__block-list list">
             <li class="list__elem">Раздел 1</li>
             <li class="list__elem">Раздел 2</li>
@@ -209,16 +235,16 @@
           </ul>
         </div>
         <div class="footer__block-part">
-          <span class="footer__block-title">Раздел 2</span>
+          <div class="footer__block-title">Раздел 2</div>
           <ul class="footer__block-list list">
             <li class="list__elem">Раздел 1</li>
             <li class="list__elem">Раздел 2</li>
           </ul>
-          <span class="footer__block-title">Раздел 3</span>
-          <span class="footer__block-title">Раздел 4</span>
+          <div class="footer__block-title">Раздел 3</div>
+          <div class="footer__block-title">Раздел 4</div>
         </div>
         <div class="footer__block-part">
-          <span class="footer__block-title">Раздел 5</span>
+          <div class="footer__block-title">Раздел 5</div>
           <div class="footer__block-address address">
             <div class="address__street">
               <span class="footer__block-text">5658 Morton Ford</span>
@@ -234,12 +260,15 @@
           </div>
         </div>
       </div>
-      <div class="footer__block email">Подписаться на рассылки</div>
-      <div class="social">
-        <div class="icons social__facebook"></div>
-        <div class="icons social__twitter"></div>
-        <div class="icons social__google"></div>
+      <div class="social__wrapper">
+        <div class="footer__block email">Подписаться на рассылки</div>
+        <div class="social">
+          <div class="icons social__facebook"></div>
+          <div class="icons social__twitter"></div>
+          <div class="icons social__google"></div>
+        </div>
       </div>
+
       <div class="lines">
         <div class="lines__item one"></div>
         <div class="lines__item two"></div>
@@ -257,6 +286,6 @@
       </div>
     </footer>
   </div>
-  <script src="dist/js/app.js"></script>
+  <script src="dist/js/bundle.js"></script>
 </body>
 </html>
